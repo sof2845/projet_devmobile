@@ -40,6 +40,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="RJ3-Hr-OU1">
+                        <barButtonItem key="leftBarButtonItem" title="Se Connecter" id="Qhu-P2-ZdR"/>
                         <barButtonItem key="rightBarButtonItem" title="Créer un compte" id="rMx-qL-HPZ">
                             <connections>
                                 <segue destination="fLD-jJ-3Te" kind="show" id="yn6-k0-cV1"/>
@@ -54,6 +55,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="952" y="288"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d7R-KJ-ezq">
+            <objects>
+                <viewController id="B9k-DL-K69" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VGb-0g-iJV"/>
+                        <viewControllerLayoutGuide type="bottom" id="OkF-lc-Poy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7vi-m7-W9X">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTe-yM-L4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="986"/>
         </scene>
         <!--Creation Compte-->
         <scene sceneID="YT6-Z7-ZWf">
