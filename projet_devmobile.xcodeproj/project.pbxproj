@@ -13,6 +13,7 @@
 		F25ADA641C92F1A30058906B /* projet_devmobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F25ADA621C92F1A30058906B /* projet_devmobile.xcdatamodeld */; };
 		F25ADA661C92F1A30058906B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25ADA651C92F1A30058906B /* Assets.xcassets */; };
 		F25ADA691C92F1A30058906B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25ADA671C92F1A30058906B /* LaunchScreen.storyboard */; };
+		F266611D1C9B1DD8004D20C1 /* SeConnecter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266611C1C9B1DD8004D20C1 /* SeConnecter.swift */; };
 		F2FEC4101C999CDC002C14E1 /* CreationCompte.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FEC40F1C999CDC002C14E1 /* CreationCompte.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		F25ADA651C92F1A30058906B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F25ADA681C92F1A30058906B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F25ADA6A1C92F1A30058906B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F266611C1C9B1DD8004D20C1 /* SeConnecter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeConnecter.swift; sourceTree = "<group>"; };
 		F2FEC40F1C999CDC002C14E1 /* CreationCompte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreationCompte.swift; path = ../CreationCompte.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				F25ADA5D1C92F1A30058906B /* ViewController.swift */,
 				F2FEC40F1C999CDC002C14E1 /* CreationCompte.swift */,
 				F25ADA5F1C92F1A30058906B /* Main.storyboard */,
+				F266611C1C9B1DD8004D20C1 /* SeConnecter.swift */,
 				F25ADA651C92F1A30058906B /* Assets.xcassets */,
 				F25ADA671C92F1A30058906B /* LaunchScreen.storyboard */,
 				F25ADA6A1C92F1A30058906B /* Info.plist */,
@@ -144,6 +147,7 @@
 				F2FEC4101C999CDC002C14E1 /* CreationCompte.swift in Sources */,
 				F25ADA641C92F1A30058906B /* projet_devmobile.xcdatamodeld in Sources */,
 				F25ADA5E1C92F1A30058906B /* ViewController.swift in Sources */,
+				F266611D1C9B1DD8004D20C1 /* SeConnecter.swift in Sources */,
 				F25ADA5C1C92F1A30058906B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
