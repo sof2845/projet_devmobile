@@ -25,8 +25,6 @@ class SeConnecter: UIViewController {
         
         request.predicate = NSPredicate(format: "username = %@", "" + user.text!)
         
-        
-        
         do {
             var results:NSArray? = try context.executeFetchRequest(request)
             
@@ -44,6 +42,12 @@ class SeConnecter: UIViewController {
                 
                 print("erreur")
                 
+                let alertController = UIAlertController(title: "Erreur", message:
+                    "Utilisateur ou mot de passe incorrecte", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default,handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+
             }
             
         } catch let error as NSError {
