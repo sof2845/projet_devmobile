@@ -7,15 +7,35 @@
 //
 
 import UIKit
+import CoreData
 
 class CreationCompte: UIViewController {
     
+    @IBOutlet weak var username: UITextField!
     
+    @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var confirmPassword: UITextField!
+    @IBOutlet weak var nom: UITextField!
+    
+    @IBOutlet weak var prenom: UITextField!
     @IBAction func CreerCompte(sender: AnyObject) {
-        print("test")
+        if(password.text == confirmPassword.text){
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let managedContext = appDelegate.managedObjectContext
+            let entity = NSEntityDescription.entityForName("Utilisateur", inManagedObjectContext:managedContext)
+            let utilisateur = NSManagedObject(entity:entity!, insertIntoManagedObjectContext: managedContext)
+            utilisateur.setValue(username.text, forKey: "username")
+            utilisateur.setValue(password.text, forKey: "password")
+        
+            do{
+                try managedContext.save()
+            }catch{
+                print("erreur")
+            }
+        }
+        
     }
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
