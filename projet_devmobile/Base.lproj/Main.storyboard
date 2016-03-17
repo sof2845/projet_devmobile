@@ -50,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O55-AE-g6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-369" y="-967"/>
+            <point key="canvasLocation" x="-277" y="-403"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -67,11 +67,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Y0-Nv-ycd">
                                 <rect key="frame" x="9" y="28" width="311" height="44"/>
                                 <items>
-                                    <barButtonItem title="Se connecter" id="e7m-c8-Moh">
-                                        <connections>
-                                            <segue destination="eO4-1j-QAr" kind="show" id="2mc-KI-F2t"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem title="Se connecter" id="e7m-c8-Moh"/>
                                     <barButtonItem width="328" style="plain" systemItem="fixedSpace" id="4sf-LU-XnG"/>
                                     <barButtonItem title="Créer un compte" id="KLn-SH-7wE"/>
                                 </items>
@@ -81,7 +77,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellule" id="G3X-mE-dFp">
-                                        <rect key="frame" x="0.0" y="92" width="560" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G3X-mE-dFp" id="030-Rd-ceB">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
@@ -99,6 +95,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="RJ3-Hr-OU1">
+                        <barButtonItem key="leftBarButtonItem" title="Se Connecter" id="r03-Lh-jTf">
+                            <connections>
+                                <segue destination="eO4-1j-QAr" kind="show" id="ULI-9O-Mki"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Créer un compte" id="rMx-qL-HPZ">
                             <connections>
                                 <segue destination="fLD-jJ-3Te" kind="show" id="yn6-k0-cV1"/>
@@ -113,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-828" y="-945"/>
+            <point key="canvasLocation" x="-644" y="-365"/>
         </scene>
         <!--Creation Compte-->
         <scene sceneID="YT6-Z7-ZWf">
@@ -124,7 +125,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eoF-p6-omO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="X5C-sw-veN" customClass="Création_compte">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pbi-SB-c3Z">
@@ -180,7 +181,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEu-vV-gtA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276" y="293"/>
+            <point key="canvasLocation" x="-1144" y="-410"/>
         </scene>
     </scenes>
 </document>
