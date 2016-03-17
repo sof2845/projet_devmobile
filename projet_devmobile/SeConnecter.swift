@@ -24,7 +24,7 @@ class SeConnecter: UIViewController {
         request.returnsObjectsAsFaults = false;
         
         request.predicate = NSPredicate(format: "username = %@", "" + user.text!)
-    request.predicate = NSPredicate(format: "password = %@", "" + user.text!)
+    request.predicate = NSPredicate(format: "password = %@", "" + mdp.text!)
         
         
         
