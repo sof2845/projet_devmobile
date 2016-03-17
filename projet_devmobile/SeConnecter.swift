@@ -18,15 +18,15 @@ class SeConnecter: UIViewController {
     @IBAction func testCo(sender: AnyObject) {
         let apDel:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
         
-        var	 context:NSManagedObjectContext = apDel.managedObjectContext
+        let   context:NSManagedObjectContext = apDel.managedObjectContext
        
-        var request = NSFetchRequest(entityName: "Utilisateur")
+        let request = NSFetchRequest(entityName: "Utilisateur")
         
         request.returnsObjectsAsFaults = false;
         
-        request.predicate = NSPredicate(format: "username = %@", "" + user.text!)
-    request.predicate = NSPredicate(format: "password = %@", "" + mdp.text!)
-        
+       
+
+     request.predicate = NSPredicate(format: "username = %@ AND password = %@", argumentArray: [user.text!, mdp.text!])
         
         
         
