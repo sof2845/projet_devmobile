@@ -56,7 +56,7 @@
                         <viewControllerLayoutGuide type="bottom" id="TUC-Z3-xVY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wXW-eL-7Bu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ajouter un service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBl-P3-k7o">
@@ -133,6 +133,13 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Jor-Zh-lBe"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laJ-7A-ryA">
+                                <rect key="frame" x="28" y="69" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="kdJ-Wk-Bq9" kind="show" id="HbD-G4-b9B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -167,7 +174,7 @@
                         <viewControllerLayoutGuide type="top" id="tsj-Ry-Hdx"/>
                         <viewControllerLayoutGuide type="bottom" id="eoF-p6-omO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="X5C-sw-veN" customClass="Création_compte">
+                    <view key="view" contentMode="scaleToFill" id="X5C-sw-veN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
