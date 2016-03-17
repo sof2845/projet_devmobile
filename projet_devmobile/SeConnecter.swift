@@ -19,11 +19,12 @@ class SeConnecter: UIViewController {
         let apDel:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
         
         var	 context:NSManagedObjectContext = apDel.managedObjectContext
-        var request = NSFetchRequest(entityName: "Utilisateur")
+       var request = NSFetchRequest(entityName: "Utilisateur")
         
-        request.returnsObjectsAsFaults = false;
+       // request.returnsObjectsAsFaults = false;
         
-        request.predicate = NSPredicate(format: "username = %@", "" + user.text!)
+      //  request.predicate = NSPredicate(format: "username = %@", "" + user.text!)
+       // request.predicate = NSPredicate(format: "password = %@", "" + user.text!)
         
         do {
             var results:NSArray? = try context.executeFetchRequest(request)
@@ -33,7 +34,7 @@ class SeConnecter: UIViewController {
                 
                 let res = results![0] as! NSManagedObject
                 
-                                
+                
                 
                 
             }
@@ -47,7 +48,7 @@ class SeConnecter: UIViewController {
                 alertController.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default,handler: nil))
                 
                 self.presentViewController(alertController, animated: true, completion: nil)
-
+                
             }
             
         } catch let error as NSError {
