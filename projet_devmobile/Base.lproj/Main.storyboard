@@ -143,7 +143,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eoF-p6-omO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="X5C-sw-veN" customClass="Création_compte">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pbi-SB-c3Z">
@@ -153,11 +153,6 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom d'utilisateur" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rya-wR-SKi">
                                 <rect key="frame" x="138" y="239" width="201" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4cS-gW-zOP">
-                                <rect key="frame" x="138" y="109" width="201" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -174,10 +169,26 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5Y-H8-WbV">
                                 <rect key="frame" x="221" y="438" width="46" height="30"/>
                                 <state key="normal" title="Créer "/>
+                                <connections>
+                                    <action selector="CreerCompte:" destination="fLD-jJ-3Te" eventType="touchUpInside" id="iuh-oo-8eF"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4cS-gW-zOP">
+                                <rect key="frame" x="138" y="109" width="201" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="confirmPassword" destination="uME-Kv-sFX" id="JYw-YG-97N"/>
+                        <outlet property="nom" destination="4cS-gW-zOP" id="Er2-zv-Lsc"/>
+                        <outlet property="password" destination="Pbi-SB-c3Z" id="07A-up-K4r"/>
+                        <outlet property="prenom" destination="OjO-Ja-Wet" id="461-Ci-nKZ"/>
+                        <outlet property="username" destination="Rya-wR-SKi" id="6sR-dI-inV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDg-e1-yoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
