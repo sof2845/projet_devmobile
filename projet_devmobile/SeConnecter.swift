@@ -26,8 +26,12 @@ class SeConnecter: UIViewController {
       //  request.predicate = NSPredicate(format: "username = %@", "" + user.text!)
        // request.predicate = NSPredicate(format: "password = %@", "" + user.text!)
         
+        
+        
+        
+        
         do {
-            var results:NSArray? = try context.executeFetchRequest(request)
+            let results:NSArray? = try context.executeFetchRequest(request)
             
             if( results!.count > 0)
             {
