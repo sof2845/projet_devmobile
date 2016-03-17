@@ -19,7 +19,7 @@ class SeConnecter: UIViewController {
         let apDel:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
         
         var	 context:NSManagedObjectContext = apDel.managedObjectContext
-       print("toto")
+       
         var request = NSFetchRequest(entityName: "Utilisateur")
         
         request.returnsObjectsAsFaults = false;
