@@ -95,7 +95,6 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="RJ3-Hr-OU1">
-                        <barButtonItem key="leftBarButtonItem" title="Se Connecter" id="Qhu-P2-ZdR"/>
                         <barButtonItem key="rightBarButtonItem" title="Créer un compte" id="rMx-qL-HPZ">
                             <connections>
                                 <segue destination="fLD-jJ-3Te" kind="show" id="yn6-k0-cV1"/>
